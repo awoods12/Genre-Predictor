@@ -1,0 +1,8 @@
+numpy
+scipy
+tensorflow
+ez-setup
+moviepy
+matplotlib
+pydub
+soundfile
