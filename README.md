@@ -10,4 +10,5 @@ How to:
 4. Run Spectrogram.py
 5. After Spectrogram.py finishes execution, run DeepNetModel.py
 	- DeepNetModel.py will output the decimal accuracy (out of 1) of the model for each run and the average accuracy over all runs (# of runs is hard-coded as 1)
+	- DeepNetModel.py will save each trained model to the models directory
 
