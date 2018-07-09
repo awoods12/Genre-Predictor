@@ -89,12 +89,13 @@ for x in range(runs):
         classical_eval_png_list = os.listdir(classical_eval_dir)
         num_eval_files = len(rap_eval_png_list) + len(classical_eval_png_list)
         eval_input = png_input_fn(rap_dir=rap_eval_dir,classical_dir=classical_eval_dir)
-        predictions = model.predict(x=eval_input[0],batch_size=1)
+        if (eval_input[0] != []):
+            predictions = model.predict(x=eval_input[0],batch_size=1)
 
-        percentage = evaluate_predictions(eval_input, model, num_eval_files)
+            percentage = evaluate_predictions(eval_input, model, num_eval_files)
 
-        print(percentage)
-        accum_for_avg = accum_for_avg + percentage
+            print(percentage)
+            accum_for_avg = accum_for_avg + percentage
 
         model.save('../models/model_' + str(uuid.uuid4()) + '.h5')
 
