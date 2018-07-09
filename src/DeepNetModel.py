@@ -28,8 +28,8 @@ def get_images(dir, type):
 
 def png_input_fn(rap_dir,classical_dir):
     rap_im_arr,rap_lab_arr = get_images(rap_dir, 'rap')
+    classical_im_arr, classical_lab_arr = get_images(classical_dir, 'classical')
     if rap_im_arr != []:
-        classical_im_arr,classical_lab_arr = get_images(classical_dir, 'classical')
 
         im_arr = np.vstack([rap_im_arr,classical_im_arr])
         lab_arr = np.vstack([rap_lab_arr, classical_lab_arr])
