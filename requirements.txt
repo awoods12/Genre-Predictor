@@ -6,3 +6,5 @@ moviepy
 matplotlib
 pydub
 soundfile
+h5py
+uuid
