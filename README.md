@@ -3,6 +3,8 @@ Python package for predicting genres with a neural network created with Keras.
 
 This package currently only predicts whether the given mp3 is rap or classical.
 
+Current average prediction accuracy on test data (~100 songs) is 93% for two classes.
+
 How to:
 1. Delete placeholder.txt from all subfolders of train_files and eval_files - these files only exist to enable git commit of empty directories
 2. Place whatever rap and classical training files (with extension .mp3 or .MP3) in train_files/Rap and train_files/Classical respectively
