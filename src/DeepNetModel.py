@@ -4,7 +4,7 @@ import numpy as np
 from os import listdir
 import os
 import uuid
-
+#
 def get_images(dir, type):
     files = listdir(dir)
     if len(files) > 0:
